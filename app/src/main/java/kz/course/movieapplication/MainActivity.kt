@@ -1,5 +1,6 @@
 package kz.course.movieapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.aboutItem -> {
+                changeActivity()
                 true
             }
 
@@ -30,5 +32,10 @@ class MainActivity : AppCompatActivity() {
                 super.onOptionsItemSelected(item)
             }
         }
+    }
+
+    private fun changeActivity() {
+        intent = Intent(this, AboutApp::class.java)
+        startActivity(intent)
     }
 }
