@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MovieApplication</string>
+    <string name="about">О приложении</string>
+    <string name="settings">Настройки</string>
+</resources>
